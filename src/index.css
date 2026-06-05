@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary-brand: #0056b3;
+  --color-primary-bg: #f6faff;
+  --color-secondary-brand: #006e25;
+  --color-secondary-container: #80f98b;
+  --color-tertiary-brand: #88001c;
+  --color-surface-bright: #ffffff;
+  --color-dark-charcoal: #141d23;
+  --color-cool-gray-border: #dbe4ed;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f6faff;
+  color: #141d23;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom scrollbar hidiing */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes scanLineAnim {
+  0% { top: 0%; }
+  100% { top: 100%; }
+}
+
+.scanner-line {
+  animation: scanLineAnim 2s linear infinite;
+}
+
+/* Floating animation for subtle indicators */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-float {
+  animation: floatY 2.5s ease-in-out infinite;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Windy City Transit System",
+  "description": "Hsinchu smart transit assistant with real-time bus tracking, wind alerts, travel recommendations, community posts, daily traffic quiz, and AI travel helper.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
